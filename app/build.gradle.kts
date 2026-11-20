@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.HRGames.HorseBasketball"
-        minSdk = 25
+        minSdk = 24
         targetSdk = 36
         versionCode = 21
         versionName = "2.1"
