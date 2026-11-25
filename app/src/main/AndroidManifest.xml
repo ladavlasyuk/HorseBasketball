@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:appCategory="game"
+        android:networkSecurityConfig="@xml/courtside_network"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HorseBasketball">
+        <activity
+            android:name=".courtside.CourtsideLaunchActivity"
+            android:configChanges="orientation|screenSize|locale|layoutDirection|uiMode"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity android:name=".courtside.CourtsidePolicyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity android:name=".courtside.CourtsideWebActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|locale|layoutDirection|uiMode"
+            android:theme="@style/Theme.HorseBasketball.Courtside"
+            android:windowSoftInputMode="adjustResize"
+            android:launchMode="singleTop"
+            android:hardwareAccelerated="true" />
+    </application>
+
+</manifest>

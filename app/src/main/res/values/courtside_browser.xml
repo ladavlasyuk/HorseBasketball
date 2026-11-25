@@ -1,0 +1,20 @@
+<resources>
+    <string name="courtside_privacy_policy">Privacy Policy</string>
+    <color name="courtside_activity_background">#FFFFFF</color>
+    <color name="courtside_surface_bg">#FFFFFF</color>
+    <color name="courtside_loader_color">#000000</color>
+    <style name="CourtsideWindowAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/courtside_fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/courtside_fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/courtside_fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/courtside_fade_out</item>
+    </style>
+
+    <style name="Theme.HorseBasketball.Courtside" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/courtside_activity_background</item>
+        <item name="android:statusBarColor">@color/courtside_activity_background</item>
+        <item name="android:navigationBarColor">@color/courtside_activity_background</item>
+        <item name="android:windowAnimationStyle">@style/CourtsideWindowAnimation</item>
+        <item name="android:colorAccent">@color/courtside_loader_color</item>
+    </style>
+</resources>
