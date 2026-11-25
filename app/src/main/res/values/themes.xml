@@ -1,7 +1,0 @@
-<resources>
-    <style name="Theme.HorseBasketball" parent="android:Theme.Material.NoActionBar">
-        <item name="android:windowBackground">#081D65</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:colorAccent">#FFBE38</item>
-    </style>
-</resources>
